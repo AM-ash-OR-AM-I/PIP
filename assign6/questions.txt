@@ -1,0 +1,17 @@
+1. Reverse a string
+2. Reverse a string without reversing the words. Example:
+input data: ’welcome to iter’
+output: ’iter to welcome’
+2Department of Computer Science and Engineering
+Institute of Technical Education & Research, SOA, Deemed to be University
+3. Check if a string is symmetric or asymmetric
+4. Check if a string is palindrome.
+5. Given a string s and index i, delete ith value from s
+6. Count the number of vowels and consonants in a string.
+7. Find length of a string without using inbuilt function.
+8. Check if a string contains at least one digit and one alphabet.
+9. Remove duplicates from a string.
+10. Count frequency of characters in a string.
+11. Find the character having maximum frequency in a string.
+12. Check if a pair of strings are anagram to each other. Example: SILENT and LISTEN are ana-
+grams.

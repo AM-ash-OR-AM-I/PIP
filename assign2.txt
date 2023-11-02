@@ -1,0 +1,198 @@
+1. What will be the output produced by each of the following function calls:
+a. math.ceil(65.65) = 66
+b. math.ceil(65.47) = 66
+c. math.fabs(-67.58) = 67.58
+d. math.fabs(3) = 3.0
+e. math.exp(2.7) = 14.87973172
+f. math.log(45,2) = 5.491853096
+g. math.log10(1000) = 3.0
+h. math.pow(4, 1/2) = 2.0
+i. math.sqrt(121) = 11.0
+j. math.radians(30) = 0.5235987755982988
+k. math.degrees(math.pi/2) = 90.0
+
+2. Give the range in which value of variable x may lie on execution of the following statements:
+import random
+x = random.random() + 5
+Ans: 5 <= x < 6
+
+
+3. Evaluate the following expressions using Python shell. Assume that ASCII coding scheme is used for
+character data.
+a. abs(-5.4) = 5.4
+b. abs(15) = 15
+c. chr(72) = H
+d. round(-24.9) = -25
+e. float(57) = 57.0
+f. complex('1+2j') = (1+2j)
+g. divmod(5,2) = (2,1)
+h. float(57) = 57.0 
+i. pow(9,2) = 81
+j. max(97, 88, 60) = 97
+k. min(55, 29, 99) = 29
+l. max('a', 'b', 'AB') = b
+
+4. Consider the following function:
+def nMultiple(a = 0, num = 1):
+   return a*num
+What will be the output produced when the following calls are made:
+a. nMultiple(5) = 5
+b. nMultiple(5,6) = 30
+c. nMultiple(num = 7) = 0
+d. nMultiple(num = 6, a = 5) = 30
+e. nMultiple(5, num = 6) = 30
+
+5. Develop Python functions to produce the following outputs:
+
+a)
+for i in range(3):
+   for j in range(1,4):
+      print('*', end = ' ')
+
+b)
+for i in range(3):
+   for j in range(1,4):
+      print(j, end = ' ')
+
+6. Study the program segments given below. Give the output produced, if any.
+a. def test(a, b):
+      a = a + b
+      b = a - b
+      a = a - b
+   print('a =', a)
+   print('b =', b)
+   test(5, 8)
+   Output: a = 8
+           b = 5
+
+b. def func():
+      pass
+   a = func()
+   print(a)
+   Output: None
+
+7. Write a function areaTriangle that takes the lengths of three sides: side1, side2, and side3 of the triangle as the input parameters and returns the area of the triangle as the output. Also, assert that sum of the length of any two sides is greater than the third side. Write a function main that accepts inputs from the user interactively and computes the area of the triangle using the function areaTriangle.
+
+Ans:
+def areaTriangle(side1, side2, side3):
+   s = (side1 + side2 + side3)/2
+   area = (s*(s-side1)*(s-side2)*(s-side3))**0.5
+   return area
+
+if __name__ == '__main__':
+   side1, side2, side3 = map(int, input('Enter the length of three sides of triangle: ').split())
+   assert side1 + side2 > side3 and side2 + side3 > side1 and side3 + side1 > side2, 'Sum of any two sides should be greater than the third side'
+   print('Area of triangle is', areaTriangle(side1, side2, side3))
+
+
+8. Write a function to print the table of entered number.
+
+n = int(input('Enter a number: '))
+def table(n):
+   for i in range(1,11):
+      print(n, 'x', i, '=', n*i)
+
+9. Study the program segments given below. Give the output produced, if any.
+a. def say (message, times=2):
+      print(message*times)
+   say (‘Hello')
+   say(‘World',5)
+   Ans: HelloHello
+        WorldWorldWorldWorldWorld
+
+b. def fun(a=2,b=3,c=7):
+      d= a+b+c
+      print(d)
+   print(fun (2))
+   Ans: 12
+        None
+
+10. Find the sum of even digits of a four-digit number using function.
+Warning: Don't use control structures.
+
+def sumEvenDigits(n):
+    a = n % 10
+    n //= 10
+    b = n % 10
+    n //= 10
+    c = n % 10
+    n //= 10
+    d = n % 10
+    return a * (a % 2 == 0) + b * (b % 2 == 0) + c * (c % 2 == 0) + d * (d % 2 == 0)
+
+11. Using a function evaluate the value of the arithmetic expression taken from the user.
+Hint: Expression will act as an argument while defining function.
+Ans:
+def evaluate(exp):
+   return eval(exp)
+
+
+12. What does a function return by default in Python? Define a function that does not return any value,
+store the function call in a variable and check the value of that variable.
+Ans: 
+Function returns None by default in Python.
+def fun():
+   pass
+a = fun()
+print(a)
+
+13. Write a function which takes co-ordinates of three points as input and returns true if points are
+collinear otherwise returns false.
+Ans:
+def collinear(x1, y1, x2, y2, x3, y3):
+   if (y3 - y2)*(x2 - x1) == (y2 - y1)*(x3 - x2):
+      return True
+   else:
+      return False
+
+
+14. Write a function named as ‘UpperCase' which converts the lower case alphabet to uppercase alphabet.
+Also, assert that the entered alphabet by user is valid lowercase alphabet. Write a function main that
+accepts inputs from the user interactively and converts the lowercase alphabet to uppercase using the
+function ‘UpperCase'.
+Ans:
+def UpperCase(ch):
+   assert ord(ch) >= 97 and ord(ch) <= 122, 'Invalid lowercase alphabet'
+   return chr(ord(ch) - 32)
+
+15. Observe carefully the below function
+def fun(a=0, b=1):
+   return (a**2 + b**2)
+What will be the output for each call made below?
+a.) fun(2,a=3) = 13
+b.) fun(b=3,2) = Syntax Error
+c.) fun(3,b=2) = 13
+d.) fun(a=4,5) = Syntax Error
+
+16. What will be the output of following code?
+x = -5
+def display(x):
+   print(x)
+   x = 5
+   print(x)
+display(x)
+print(x)
+Ans: -5, 5, -5
+
+17. What will be the output of the following Python code?
+int('89.67')
+b. Value Error
+
+18. Create the following scripts importedModule and mainModule in the working directory, execute the
+script mainModule and justify the output.
+
+• importedModule.py
+def test1():
+   print('test1 in imported module')
+def test2():
+   print('test2 in imported module')
+test1()
+test2()
+
+• mainModule.py
+import importModule
+print('hello')
+
+Ans: test1 in imported module
+     test2 in imported module
+     hello

@@ -1,0 +1,303 @@
+1. Evaluate the following expressions:
+(x < y) or (not(z == y) and (z < x))
+
+a. x = 0, y = 6, z = 10
+= (0 < 6) or (not(10 == 6) and (10 < 0))
+= True or (True and False)
+= True
+
+b. x = 1, y = 1, z = 1
+= (1 < 1) or (not(1 == 1) and (1 < 1))
+= False or (False and False)
+= False
+
+
+
+2. Evaluate the following expressions involving arithmetic operators:
+a. -7 * 20 + 8 / 16 * 2 + 54
+= -140 + 0.5 * 2 + 54
+= -140 + 1 + 54
+= -85
+
+b. 7 ** 2 // 9 % 3
+= 49 // 9 % 3
+= 5 % 3
+= 2
+
+c. (7 - 4 * 2) * 10 - 25 * 8 // 5
+= (7 - 8) * 10 - 200 // 5
+= (-1) * 10 - 40
+= -10 - 40
+= -50
+
+d. 5 % 10 + 10 - 25 * 8 // 5
+= 5 + 10 - 200 // 5
+= 5 + 10 - 40
+= 15 - 40
+= -25
+
+e. 'hello' * 2 - 5
+= 'hellohello' - 5
+= TypeError (String subtraction is not defined)
+
+
+
+
+
+3. Evaluate the following expressions involving relational and logical operators:
+a. 'hi' > 'hello' and 'bye' < 'Bye'
+= True and True
+= True
+
+b. 'hi' > 'hello' or 'bye' < 'Bye'
+= True or True
+= True
+
+c. 7 > 8 or 5 < 6 and 'I am fine' > 'I am not fine'
+= False or True and True
+= False or True
+= True
+
+d. 10 != 9 and 29 >= 29
+= True and True
+= True
+
+e. 10 != 9 and 29 >= 29 and 'hi' > 'hello' or 'bye' < 'Bye' and 7 <= 2.5
+= True and True and True or True and False
+= True or False
+= True
+
+
+
+
+
+4. Evaluate the following expressions involving arithmetic, relational, and logical operators:
+a. 5 % 10 + 10 < 50 and 29 >= 29
+= 5 + 10 < 50 and True
+= 15 < 50 and True
+= True and True
+= True
+
+b. 7 ** 2 <= 5 // 9 % 3 or 'bye' < 'Bye'
+= 49 <= 0 % 3 or True
+= False or True
+= True
+
+c. 5 % 10 < 8 and -25 > 1 * 8 // 5
+= 5 < 8 and -25 > 1 * 1
+= True and False
+= False
+
+d. 7 ** 2 // 4 + 5 > 8 or 5 != 6
+= 49 // 4 + 5 > 8 or True
+= 12 + 5 > 8 or True
+= 17 > 8 or True
+= True
+
+e. 7/4 < 6 and 'I am fine' > 'I am not fine'
+= 1.75 < 6 and True
+= True and True
+= True
+
+f. 10 + 6 * 2 ** 2 != 9 // 4 - 3 and 29 >= 29
+= 10 + 6 * 4 != 2 - 3 and True
+= 10 + 24 != -1 and True
+= 34 != -1 and True
+= True and True
+= True
+
+g. 'hello' * 5 > 'hello' or 'bye' < 'Bye'
+= 'hellohellohellohellohello' > 'hello' or True
+= True or True
+= True
+
+
+
+
+
+5. Evaluate the following expressions involving bitwise operators:
+a. 15 & 22
+= 14
+
+b. 15 | 22
+= 23
+
+c. -15 & 22
+= 18
+
+d. -15 | 22
+= -9
+
+e. ~15
+= -16
+
+f. ~22
+= -23
+
+g. ~20
+= 19
+
+h. 15 ^ 22
+= 7
+
+i. 8 << 3
+= 64
+
+j. 40 >> 3
+= 5
+
+
+
+
+6. Differentiate between the following operators with the help of examples:
+a. = (Assignment Operator) and == (Equality Operator):
+= is used to assign a value to a variable. Example: x = 5.
+== is used to check if two values are equal. Example: x == 5 (checks if x is equal to 5).
+
+b. / (Division Operator) and % (Modulus Operator):
+
+/ is used to perform division. Example: 10 / 2 = 5.
+% is used to find the remainder after division. Example: 10 % 3 = 1.
+
+c. / (Division Operator) and // (Floor Division Operator):
+
+/ is regular division. Example: 7 / 2 = 3.5.
+// is floor division, which returns the floor value of the division result. Example: 7 // 2 = 3.
+
+d. * (Multiplication Operator) and ** (Exponentiation Operator):
+
+* is used for multiplication. Example: 4 * 3 = 12.
+** is ued for exponentiation. Example: 2 ** 3 = 8.
+
+
+
+
+7.
+a)
+a = 6
+a == 6 -> True
+a < 5.9 -> False
+a > 5.9 -> True
+
+b) 
+
+>>> b = 7
+>>> b / 6
+1.1666666666666667
+>>> b // 6
+1
+>>> b / 4
+1.75
+>>> b % 4
+3
+>>> b % 7
+0
+>>> b * 2
+14
+>>> b**2
+49
+
+
+
+
+8. Construct logical expressions for representing the following conditions:
+a. marks scored should be greater than 300 and less than 400.
+b. Whether the value of grade is an uppercase letter.
+c. The post is engineer and experience is more than four years
+
+a. marks > 300 and marks < 400
+b. grade >= 'A' and grade <= 'Z'
+c. post == 'engineer' and experience > 4
+
+
+
+
+9. Write Python statements for the following equations:
+a. root1= − b + (b**2 − 4a*c)*.5/2a
+b. result= 
+
+
+
+
+
+
+
+10. How does the effect of the following two statements differ?
+a. x += x + 10
+b. x = x+ 10
+
+a. x += x + 10 is equivalent to x = x + (x + 10). This means that the value of x is added to itself and 10 is added to the result. The final result is assigned to x.
+b. x = x + 10 is equivalent to x = x + 10. This means that the value of x is added to 10 and the result is assigned to x.
+
+
+
+11. Write a program that asks the user to enter the width and length of a room. Once these values have
+been read, your program should compute and display the area of the room. The length and the width
+will be entered as floating-point numbers. Include units in your prompt and output message; either
+feet or meters, depending on which unit you are more comfortable working with.
+
+Ans:
+width = float(input("Enter the width of the room in feet: "))
+length = float(input("Enter the length of the room in feet: "))
+area = width * length
+print("The area of the room is", area, "square feet.")
+
+
+12. An online retailer sells two products: widgets and gizmos. Each widget weighs 75 grams. Each gizmo
+weighs 112 grams. Write a program that reads the number of widgets and the number of gizmos from
+the user. Then your program should compute and display the total weight of the parts.
+
+Ans:
+widgets = int(input("Enter the number of widgets: "))
+gizmos = int(input("Enter the number of gizmos: "))
+total_weight = widgets * 75 + gizmos * 112
+print("The total weight of the parts is", total_weight, "grams.")
+
+
+
+13. 13. Write a program that determines how quickly an object is travelling when it hits the ground. The user
+will enter the height from which the object is dropped in meters (m). Because the object is dropped
+its initial speed is 0 m/s. Assume that the acceleration due to gravity is 9.8m/s2. You can use the
+formula vf =√(vi^2 + 2ad) to compute the final speed, vf , when the initial speed, vi, acceleration, a,
+and distance, d, are known
+
+Ans:
+height = float(input("Enter the height from which the object is dropped in meters: "))
+vf = (2 * 9.8 * height) ** 0.5
+print("The final speed of the object is", vf, "m/s.")
+
+
+
+14. Write a program that reads a four-digit integer from the user and displays the sum of its digits. For
+example, if the user enters 3141 then your program should display 3 + 1 + 4 + 1 = 9.
+
+Ans:
+num = int(input("Enter a four-digit integer: "))
+sum = 0
+while num > 0:
+    sum += num % 10
+    num //= 10
+print("The sum of the digits is", sum)
+
+
+
+15. Write a program that reads three integers from the user and displays them in sorted order (from
+smallest to largest). Use the min and max functions to find the smallest and largest values. The middle value can be found by computing the sum of all three values, and then subtracting the minimum value
+and the maximum value.
+
+Ans:
+a, b, c = map(int, input("Enter three integers: ").split())
+min = min(a, b, c)
+max = max(a, b, c)
+mid = a + b + c - min - max
+print("The integers in sorted order are", min, mid, max)
+
+
+
+16. Create a program that reads duration from the user as a number of days, hours, minutes, and seconds.
+Compute and display the total number of seconds represented by this duration
+
+Ans:
+days, hours, minutes, seconds = map(int, input("Enter the duration in days, hours, minutes, and seconds: ").split())
+total_seconds = days * 24 * 60 * 60 + hours * 60 * 60 + minutes * 60 + seconds
+print("The total number of seconds represented by this duration is", total_seconds)

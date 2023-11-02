@@ -6,12 +6,7 @@ number whose sum of the cubes of the cubes of the digits is equal to the number 
 
 
 def is_armstrong(n):
-    sum = 0
-    temp = n
-    while temp != 0:
-        temp, r = divmod(temp, 10)
-        sum += r**3
-    return sum == n
+    return sum(map(lambda x: x**3, map(int, str(n)))) == n
 
 
 if __name__ == "__main__":
