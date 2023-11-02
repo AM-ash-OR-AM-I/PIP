@@ -8,7 +8,7 @@ for x in s:
         alpha = True
     elif x.isdigit():
         digit = True
-
+    s = "sde".isalnum()
 print(
     "Contains at least one digit and one alphabet"
     if digit and alpha
