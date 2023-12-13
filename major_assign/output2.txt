@@ -1,0 +1,4 @@
+Enter a hexadecimal digit: A
+Decimal equivalent: 10
+Enter a decimal value: 14
+Hexadecimal equivalent: E

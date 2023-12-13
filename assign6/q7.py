@@ -1,11 +1,15 @@
-# Find length of a string without using inbuilt function
-
-
-def length(s):
-    count = 0
-    for _ in s:
-        count += 1
-    return count
-
-
-print(length(input("Enter string: ")))
+greeting = "Good Morning. Have a Good Day!!"
+greeting.count("Good")
+greeting.find("a")
+greeting.rfind("a")
+greeting.capitalize()
+greeting.lower()
+greeting.upper()
+greeting.swapcase()
+greeting.istitle()
+greeting.replace("Good", "Sweet")
+greeting.strip()
+greeting.split()
+greeting.partition(".")
+greeting.startswith("good")
+greeting.endswith("!!")

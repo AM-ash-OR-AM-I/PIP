@@ -1,0 +1,2 @@
+Enter a binary number: 101101
+The equivalent decimal number is: 45

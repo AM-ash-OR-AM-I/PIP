@@ -1,0 +1,4 @@
+Enter the number: 12
+Enter the base of the input number: 3
+Enter the base of the result number: 10
+Result: 5
