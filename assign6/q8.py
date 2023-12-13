@@ -12,6 +12,8 @@ print(re.search(r".*Language", string1).group())
 print(re.search(r"\w*\s\w*", string1).group())
 print(re.search(r".*", string1).group())
 
+import re
+
 string2 = "Car Number DL5645"
 match1 = re.search(r"\w\w?\d{1,4}", string2)
 print(match1.group())
