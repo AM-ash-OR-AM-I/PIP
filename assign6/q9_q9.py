@@ -24,11 +24,11 @@ def remove_duplicates_from_list(l):
 
 
 # Don't take extra space.
-def remove_duplicates_no_extraspace(l):
+def remove_duplicates_no_extraspace(l: list):
     for x in l:
-        counts = l.count(x)
-        while counts > 1:
-            l[::-1].remove(x)
+        while l.count(x) > 1:
+            index = l.index(x, l.index(x) + 1)
+            l.pop(index)
 
 
 # print(remove_duplicates(input("Enter string: ")))
